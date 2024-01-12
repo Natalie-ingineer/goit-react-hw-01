@@ -1,19 +1,18 @@
-// export const Profile = ({
-//   name,
-//   tag,
-//   location,
-//   img,
-//   stats,
-// }) => (
-//  <div className="profile">
-//   <div className="description">
-//     <img
-//       src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-//       alt="User avatar"
-//       className="avatar"
-//     />
-//     <p className="name">Petra Marica</p>
-//     <p className="tag">@pmarica</p>
-//     <p className="location">Salvador, Brasil</p>
-//   </div>
-// )
+const Profile = () => {
+  return (
+    <div className="profile">
+      <div className="description">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+          alt="User avatar"
+          className="avatar"
+        />
+        <p className="name">Petra Marica</p>
+        <p className="tag">@pmarica</p>
+        <p className="location">Salvador, Brasil</p>
+      </div>
+    </div>
+  );
+};
+
+export { Profile };

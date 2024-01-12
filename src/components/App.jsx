@@ -2,7 +2,19 @@ import "./App.css";
 import userData from "../userData.json";
 import { Profile } from "./Profile";
 
-export default function App() {
+// {
+//   "username": "Jacques Gluke",
+//   "tag": "jgluke",
+//   "location": "Ocho Rios, Jamaica",
+//   "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+//   "stats": {
+//     "followers": 5603,
+//     "views": 4827,
+//     "likes": 1308
+//   }
+// }
+
+function App() {
   return (
     <div className="profile">
       <div className="description">
@@ -33,3 +45,5 @@ export default function App() {
     </div>
   );
 }
+
+export { App };
