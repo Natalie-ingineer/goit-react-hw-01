@@ -11,6 +11,20 @@ const Profile = () => {
         <p className="tag">@pmarica</p>
         <p className="location">Salvador, Brasil</p>
       </div>
+      <ul className="stats">
+        <li>
+          <span className="label">Followers</span>
+          <span className="value">1000</span>
+        </li>
+        <li>
+          <span className="label">Views</span>
+          <span className="value">2000</span>
+        </li>
+        <li>
+          <span className="label">Likes</span>
+          <span className="value">3000</span>
+        </li>
+      </ul>
     </div>
   );
 };
