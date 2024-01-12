@@ -1,17 +1,35 @@
 import "./App.css";
-import { Product } from "./Product";
+import userData from "../userData.json";
+import { Profile } from "./Profile";
 
 export default function App() {
   return (
-    <div>
-      <h1>Best selling</h1>
+    <div className="profile">
+      <div className="description">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+          alt="User avatar"
+          className="avatar"
+        />
+        <p className="name">Petra Marica</p>
+        <p className="tag">@pmarica</p>
+        <p className="location">Salvador, Brasil</p>
+      </div>
 
-      <Product name="Tacos With Lime" price={10.99} />
-      <Product
-        name="Fries and Burger"
-        imgUrl="<https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640>"
-        price={14.29}
-      />
+      <ul className="stats">
+        <li>
+          <span className="label">Followers</span>
+          <span className="value">1000</span>
+        </li>
+        <li>
+          <span className="label">Views</span>
+          <span className="value">2000</span>
+        </li>
+        <li>
+          <span className="label">Likes</span>
+          <span className="value">3000</span>
+        </li>
+      </ul>
     </div>
   );
 }
