@@ -4,6 +4,8 @@ const Profile = () => {
       <div className="description">
         <img
           src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+          width={250}
+          height={250}
           alt="User avatar"
           className="avatar"
         />
