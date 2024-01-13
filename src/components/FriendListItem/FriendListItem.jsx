@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-import "../FriendListItem/FriendListItem.css";
+import css from "../FriendListItem/FriendListItem.module.css";
 
 const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
   const statusClasses = clsx("status", {
@@ -9,9 +9,9 @@ const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
   });
 
   return (
-    <div className="item">
-      <img className="avatar" src={avatar} alt={name} width="100" />
-      <p className="name">{name}</p>
+    <div className={css.item}>
+      <img className={css.avatar} src={avatar} alt={name} width="100" />
+      <p className={css.name}>{name}</p>
       <p className={statusClasses}>{isOnline ? "Online" : "Offline"}</p>
     </div>
   );
