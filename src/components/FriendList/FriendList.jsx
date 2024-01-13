@@ -1,15 +1,16 @@
-import css "./FriendList.module.css"
-import { FriendListItem } from "../FriendListItem/FriendListItem"
+import "./FriendList.module.css";
+import { FriendListItem } from "../FriendListItem/FriendListItem";
 
-const FriendList = (props) => {
-    return (
-        <ul className="friend-list">
-	{/* Кількість li залежить від кількості об'єктів в масиві */}
-	<li>
-		<FriendListItem />
-	</li>
-</ul>
-    )
-}
+const FriendList = ({ friends }) => {
+  return (
+    <ul className="friend-list">
+      {friends.map((friend) => (
+        <li key={friend.id}>
+          <FriendListItem friend={friend} />
+        </li>
+      ))}
+    </ul>
+  );
+};
 
-export {FriendList}
+export { FriendList };

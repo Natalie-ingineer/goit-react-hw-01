@@ -1,13 +1,13 @@
-import css "./FriendListItem.module.css"
+import "./FriendListItem.module.css";
 
-const FriendListItem = (props) => {
-    return (
-        <div className="item">
-  <img className="avatar" src="" alt="Avatar" width="48" />
-  <p className="name">Friend name</p>
-  <p className="status">Friend status</p>
-</div>
-    )
-}
+const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
+  return (
+    <div className="item">
+      <img className="avatar" src={avatar} alt={name} width="48" />
+      <p className="name">{name}</p>
+      <p className="status">{isOnline ? "Online" : "Offline"}</p>
+    </div>
+  );
+};
 
-export {FriendListItem}
+export { FriendListItem };
