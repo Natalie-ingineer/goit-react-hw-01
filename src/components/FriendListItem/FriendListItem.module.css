@@ -16,10 +16,10 @@
   color: black;
 }
 
-.status.is-active {
+.status.isActive {
   color: green;
 }
 
-.status.is-retired {
+.status.isRetired {
   color: red;
 }

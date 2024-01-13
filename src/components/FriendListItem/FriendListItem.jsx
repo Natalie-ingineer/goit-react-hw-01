@@ -4,8 +4,8 @@ import css from "../FriendListItem/FriendListItem.module.css";
 
 const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
   const statusClasses = clsx(css.status, {
-    [css["is-active"]]: isOnline,
-    [css["is-retired"]]: !isOnline,
+    [css.isActive]: isOnline,
+    [css.isRetired]: !isOnline,
   });
 
   return (
