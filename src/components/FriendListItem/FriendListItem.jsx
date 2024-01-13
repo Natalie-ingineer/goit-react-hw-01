@@ -3,9 +3,9 @@ import clsx from "clsx";
 import css from "../FriendListItem/FriendListItem.module.css";
 
 const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
-  const statusClasses = clsx("status", {
-    "is-active": isOnline,
-    "is-retired": !isOnline,
+  const statusClasses = clsx(css.status, {
+    [css["is-active"]]: isOnline,
+    [css["is-retired"]]: !isOnline,
   });
 
   return (

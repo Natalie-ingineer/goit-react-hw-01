@@ -12,10 +12,14 @@
   font-weight: 700;
 }
 
-.is-active {
+.status {
+  color: black;
+}
+
+.status.is-active {
   color: green;
 }
 
-.is-retired {
+.status.is-retired {
   color: red;
 }
