@@ -1,0 +1,43 @@
+ul,
+ol {
+}
+
+.profile {
+  margin: 50px auto;
+  width: 500px;
+
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid;
+  border-radius: 20px;
+}
+
+.avatar {
+  background-color: purple;
+  border-radius: 250px;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.tag,
+.location {
+  padding: 0;
+  margin: 0;
+  color: purple;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.stats {
+  display: flex;
+}

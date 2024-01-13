@@ -1,4 +1,4 @@
-import userData from "../userData.json";
+import "./Profile.css";
 
 const Profile = (props) => {
   return (
