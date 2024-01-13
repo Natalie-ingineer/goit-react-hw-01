@@ -47,6 +47,8 @@ ul {
   justify-content: space-around;
   background-color: lightskyblue;
   border-top: 3px solid;
+  border-left: 3px solid;
+  border-right: 3px solid;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding-bottom: 15px;

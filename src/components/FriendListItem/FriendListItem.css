@@ -1,0 +1,12 @@
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.is-active {
+  color: green;
+}
+
+.is-retired {
+  color: red;
+}
