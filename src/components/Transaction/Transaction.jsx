@@ -7,11 +7,11 @@ const Transaction = ({ transaction: { type, amount, currency } }) => {
   //   });
 
   return (
-    <>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </>
+    <div className={css.item}>
+      <td className={css.info}>{type}</td>
+      <td className={css.info}>{amount}</td>
+      <td className={css.info}>{currency}</td>
+    </div>
   );
 };
 
