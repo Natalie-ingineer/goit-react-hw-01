@@ -1,9 +1,9 @@
 import { Transaction } from '../Transaction/Transaction'
 import css from '../TransactionHistory/TransactionHistory.module.css'
 
-const TransactionHistory ({transactions}) => {
+const TransactionHistory = ({items}) => {
     return (
-      <table className={css['transaction-history']}>{transactions.map((transaction) => (
+      <table className={css['transaction-history']}>{items.map((transaction) => (
   <thead>
     <tr>
       <th>Type</th>
@@ -13,8 +13,10 @@ const TransactionHistory ({transactions}) => {
   </thead>
 
   <tbody>
+      <tr  key={transaction.id}>
     <Transaction transaction={transaction} />
-  </tbody>
+      </tr>
+    </tbody>
         
       ))}
 </table>
