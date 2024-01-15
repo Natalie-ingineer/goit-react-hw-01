@@ -4,11 +4,17 @@ import { Transaction } from "../Transaction/Transaction";
 const TransactionHistory = ({ items }) => {
   return (
     <table className={css["transaction-history"]}>
-      <thead>
+      <thead className={css.caption}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th scope="col" className={css.header}>
+            Type
+          </th>
+          <th scope="col" className={css.header}>
+            Amount
+          </th>
+          <th scope="col" className={css.header}>
+            Currency
+          </th>
         </tr>
       </thead>
       <tbody className={css.bodyTable}>
