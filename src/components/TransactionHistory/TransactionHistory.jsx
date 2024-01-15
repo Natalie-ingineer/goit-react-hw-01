@@ -19,7 +19,7 @@ const TransactionHistory = ({ items }) => {
       </thead>
       <tbody className={css.bodyTable}>
         {items.map((transaction) => (
-          <tr key={transaction.id}>
+          <tr bgcolor="azure" key={transaction.id}>
             <Transaction transaction={transaction} />
           </tr>
         ))}
