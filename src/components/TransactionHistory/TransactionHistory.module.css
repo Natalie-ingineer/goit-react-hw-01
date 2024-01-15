@@ -1,0 +1,8 @@
+.transaction-history {
+  border-color: black;
+  width: 500px;
+}
+
+.bodyTable {
+  display: flex;
+}

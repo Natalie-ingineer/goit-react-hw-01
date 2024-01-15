@@ -11,7 +11,7 @@ const TransactionHistory = ({ items }) => {
           <th>Currency</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className={css.bodyTable}>
         {items.map((transaction) => (
           <tr key={transaction.id}>
             <Transaction transaction={transaction} />
